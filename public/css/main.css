@@ -2,7 +2,7 @@ html {
     font-family: monospace, sans-serif;
     background-image: url('../pic/bouquet.jpg');
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.98;
 }
 
 body {
@@ -26,6 +26,23 @@ h2 {
   font-family: 'Just Me Again Down Here', cursive;
   font-size: 50px;
 }
+
+h3 {
+  color: #FF00FF;
+}
+
+h4 {
+  color: #DBD0D0;
+}
+
+p {
+  color: 	#808080;
+}
+
+ul {
+  color: #808080;
+}
+
 .title {
   color: #DEB0B0;
   text-decoration: underline;
