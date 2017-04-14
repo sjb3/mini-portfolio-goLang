@@ -1,22 +1,55 @@
 html {
     font-family: monospace, sans-serif;
     background-image: url('../pic/bouquet.jpg');
+    background-size: cover;
+    opacity: 0.98;
 }
 
 body {
-    width: 600px;
+    width: 750px;
     margin: 0 auto;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
+    padding: 40px 20px 20px 20px;
+    /*border: 5px solid black;*/
+    color:
 }
 
 h1 {
-    font-size: 24px;
-    margin-top: 30px;
+  font-family: 'Marck Script', cursive;
+  font-style: italic;
+  text-align: center;
+  color: #DBD0D0;
+  font-size: 65px;
+}
+
+h2 {
+  color:#00FF00;
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 50px;
+}
+
+h3 {
+  color: #FF00FF;
+}
+
+h4 {
+  color: #DBD0D0;
 }
 
 p {
-    font-size: 16px;
-    margin-top: 12px;
+  color: 	#808080;
 }
 
+ul {
+  color: #808080;
+}
+
+.title {
+  color: #DEB0B0;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.manifesto {
+  color: #DEB0B0;
+  text-align: center;
+}
