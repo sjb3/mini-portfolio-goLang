@@ -13,6 +13,7 @@ func init() {
 
 func main() {
 	http.HandleFunc("/", index)
+	http.HandleFunc("contact", contact)
 	http.Handle("/public/", http.StripPrefix("/public", http.FileServer(http.Dir("public"))))
 	http.ListenAndServe(":8080", nil)
 }
