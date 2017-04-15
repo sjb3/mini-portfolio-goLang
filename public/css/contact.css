@@ -27,3 +27,25 @@ h3 {
   font-size: 100px;
   color: red;
 }
+
+.nav-class {
+  margin-top: 20%;
+  margin-left: 30%;
+}
+
+.nav-ul {
+  /*margin-left: 77px;*/
+  font-size: 20px;
+  align-items: center;
+}
+
+.nav-ul li {
+  color: yellow;
+  display: inline-block;
+}
+  &:hover {
+    color: gray;
+  }
+  &:active {
+    color: red;
+  }
