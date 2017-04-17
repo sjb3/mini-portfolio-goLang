@@ -20,6 +20,7 @@ func main() {
 	http.HandleFunc("/", index)
 	http.Handle("/public/", http.StripPrefix("/public", http.FileServer(http.Dir("public"))))
 	http.HandleFunc("/contact", contact)
+	http.HandleFunc("/resume", index)	
 	http.ListenAndServe(":8080", nil)
 }
 
