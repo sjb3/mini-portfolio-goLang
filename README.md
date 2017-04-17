@@ -1,2 +1,2 @@
 # mini-portfolio-goLang
-try out minified simple resume using goLang 
+try out minified simple resume using goLang with mux

@@ -1,0 +1,51 @@
+html {
+    font-family: monospace, sans-serif;
+    background-image: url('../pic/palace.jpg');
+    background-size: cover;
+    image-resolution: from-image;
+    opacity: 0.98;
+}
+
+body {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0px 20px 20px 20px;
+    /*border: 5px solid black;*/
+}
+
+h2 {
+  color:#00FF00;
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 50px;
+}
+
+h3 {
+  color:purple;
+}
+
+.fa-phone {
+  font-size: 100px;
+  color: red;
+}
+
+.nav-class {
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+.nav-ul {
+  /*margin-left: 77px;*/
+  font-size: 20px;
+  align-items: center;
+}
+
+.nav-ul li {
+  color: yellow;
+  display: inline-block;
+}
+  &:hover {
+    color: gray;
+  }
+  &:active {
+    color: red;
+  }
