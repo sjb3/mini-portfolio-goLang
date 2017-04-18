@@ -1,16 +1,13 @@
-html {
-    font-family: monospace, sans-serif;
+body {
     background-image: url('../pic/bouquet.jpg');
     background-size: cover;
     opacity: 0.98;
-}
 
-body {
-    width: 750px;
-    margin: 0 auto;
+    font: 18px/1.5 monospace, sans-serif;
+    width: 75%;
+    margin: auto;
     padding: 40px 20px 20px 20px;
-    /*border: 5px solid black;*/
-    color:
+    /*overflow: hidden;*/
 }
 
 h1 {
@@ -66,12 +63,27 @@ ul {
 }
 
 .nav-ul li {
-  color: yellow;
+  color:white;
   display: inline-block;
 }
-  &:hover {
-    color: gray;
+  a:hover {
+    color: yellow;
+    font-weight: bold;
+    font-style: italic;
   }
-  &:active {
+  a:active {
     color: red;
+    font-weight: bold;
   }
+
+/*Media Queries*/
+@media(max-width: 768px){
+  body {
+    padding: 0 0 0 0;
+  }
+  .nav-class, .nav-ul, li, .resume-class{
+  float: none;
+  text-align: left;
+  width: 100%;
+  }
+}
