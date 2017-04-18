@@ -43,9 +43,12 @@ h3 {
 }
   a:hover {
     color: yellow;
+    font-weight: bold;
+    font-style: italic;
   }
   a:active {
     color: red;
+    font-weight: bold;
   }
 
 /*Media Queries*/
