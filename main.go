@@ -28,6 +28,7 @@ func main() {
 
 func resume(w http.ResponseWriter, req *http.Request) {
 	tpl.ExecuteTemplate(w, "index.gohtml", nil)
+	// http.Redirect(w, req, "/resume", http.StatusMovedPermanently)
 }
 
 func index(w http.ResponseWriter, req *http.Request) {
