@@ -1,10 +1,11 @@
 package main
 
 import (
-	_"github.com/julienschmidt/httprouter"
 	"html/template"
 	"log"
 	"net/http"
+
+	_ "github.com/julienschmidt/httprouter"
 )
 
 var tpl *template.Template
@@ -19,9 +20,14 @@ func main() {
 	// mux.GET("/contact", contact)
 	http.HandleFunc("/", index)
 	http.Handle("/public/", http.StripPrefix("/public", http.FileServer(http.Dir("public"))))
+	http.Handle("/favicon.ico", http.NotFoundHandler())
 	http.HandleFunc("/contact", contact)
-	http.HandleFunc("/resume", index)	
+	http.HandleFunc("/resume", resume)
 	http.ListenAndServe(":8080", nil)
+}
+
+func resume(w http.ResponseWriter, req *http.Request) {
+	tpl.ExecuteTemplate(w, "index.gohtml", nil)
 }
 
 func index(w http.ResponseWriter, req *http.Request) {
